@@ -1,3 +1,7 @@
+local AlreadySent = false
+repeat task.wait()
+local plrcount = #game.Players:GetPlayers()
+if plrcount < 20 and AlreadySent = false then
 Name = game.Players.LocalPlayer.Name
 request = http_request or request or HttpPost or syn.request
 local HttpS = game:GetService("HttpService")
@@ -11,3 +15,6 @@ request({
     },
     Body = HttpS:JSONEncode({["content"] = message})
 })
+        AlreadySent = True
+        end
+    until false
